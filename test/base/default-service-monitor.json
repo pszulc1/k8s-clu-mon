@@ -6,7 +6,7 @@
          "app.kubernetes.io/component": "app-service-monitor",
          "app.kubernetes.io/name": "default",
          "app.kubernetes.io/part-of": "k8s-clu-mon",
-         "app.kubernetes.io/version": "v0.1.0"
+         "app.kubernetes.io/version": "v0.1.1"
       },
       "name": "default",
       "namespace": "my-namespace"

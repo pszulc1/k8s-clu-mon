@@ -15,7 +15,7 @@
    "spec": {
       "externalLabels": {
          "k8s_clu_mon_cluster": "my-cluster",
-         "k8s_clu_mon_version": "v0.1.0"
+         "k8s_clu_mon_version": "v0.1.1"
       },
       "image": "quay.io/prometheus/prometheus:v2.46.0",
       "nodeSelector": {

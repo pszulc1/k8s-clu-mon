@@ -5,7 +5,7 @@
       "labels": {
          "app.kubernetes.io/name": "my-namespace",
          "app.kubernetes.io/part-of": "k8s-clu-mon",
-         "app.kubernetes.io/version": "v0.1.0"
+         "app.kubernetes.io/version": "v0.1.1"
       },
       "name": "my-namespace"
    }

@@ -47,7 +47,7 @@ See [k8s-clu-mon-example](https://github.com/pszulc1/k8s-clu-mon-example) for mo
 ## Install
 
 ```
-jb install github.com/pszulc1/k8s-clu-mon@v0.1.0
+jb install github.com/pszulc1/k8s-clu-mon@v0.1.1
 ```
 
 ## Usage

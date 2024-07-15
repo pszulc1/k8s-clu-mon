@@ -62,6 +62,11 @@ Search for `debug.new` in source files for other messages.
 If necessary use `jsonnet -m test/base -J vendor test/base.jsonnet` to prepare `test/base/*` files.  
 Test cases are not comprehensive, they should rather be treated as proof of concept.  
 
+To close the new release:
+
+- set `(import 'global.json').version` consistently with the new release tag,
+- `make docs` to update reference to version tag which was set as above.
+
 ## Project status
 
 It is the first version, although it has been revised many times needs tunning and extensions.  
@@ -74,4 +79,3 @@ Some directions of future works include:
 - applying `blackboxExporter` and `prometheusAdapter` from `kube-prometheus` package
 
 The library should be updated as new versions of the libraries in use become available.  
-The new release tag must be consistent with value set in `(import 'global.json').version`.  
