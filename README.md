@@ -9,7 +9,7 @@ The library uses [kube-prometheus](https://github.com/prometheus-operator/kube-p
 
 - [./docs](./docs/README.md) for more information
 - `./examples` for basic usage
-- [k8s-clu-mon-example](github.com/!!!!-PROPER-LINK-NEEDED-!!!!) for more intricate working example 
+- [k8s-clu-mon-example](https://github.com/pszulc1/k8s-clu-mon-example) for more intricate working example 
 
 ## Initial project setup (and library versions used)
 

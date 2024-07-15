@@ -41,19 +41,19 @@ A basic understanding Prometheus, Prometheus Operator's `ServiceMonitor` and Vec
 for convenient tuning data before them sending them to final destionation.  
 
 See `./examples` for basic usage.  
-See [k8s-clu-mon-example](github.com/!!!!-TU-LINK-DOPISAĆ-!!!!) for more intricate working example.  
+See [k8s-clu-mon-example](https://github.com/pszulc1/k8s-clu-mon-example) for more intricate working example.  
 
 
 ## Install
 
 ```
-jb install github.com/!!!!-TU-LINK-DOPISAĆ-!!!!@v0.1.0
+jb install github.com/pszulc1/k8s-clu-mon@v0.1.0
 ```
 
 ## Usage
 
 ```jsonnet
-local kcm = import "github.com/!!!!-TU-LINK-DOPISAĆ-!!!!/main.libsonnet"
+local kcm = import "github.com/pszulc1/k8s-clu-mon/main.libsonnet"
 ```
 
 ## Index
@@ -153,5 +153,5 @@ Parameters:
 * `secretNames` - array of secret names.
 
 Usefull in defining Vector configuration. 
-See [k8s-clu-mon-example](github.com/!!!!-TU-LINK-DOPISAĆ-!!!!) for working example.  
+See [k8s-clu-mon-example](https://github.com/pszulc1/k8s-clu-mon-example) for working example.  
 

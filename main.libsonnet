@@ -44,7 +44,7 @@ local utils = import 'utils.libsonnet';
   '#'::
     d.pkg(
       name='k8s-clu-mon',
-      url='github.com/!!!!-PROPER-LINK-NEEDED-!!!!',
+      url='github.com/pszulc1/k8s-clu-mon',
       help=
       |||
         The jsonnet library that provides the minimal set of k8s components necessary to collect and 
@@ -96,7 +96,7 @@ local utils = import 'utils.libsonnet';
         for convenient tuning data before them sending them to final destionation.  
 
         See `./examples` for basic usage.  
-        See [k8s-clu-mon-example](github.com/!!!!-PROPER-LINK-NEEDED-!!!!) for more intricate working example.  
+        See [k8s-clu-mon-example](https://github.com/pszulc1/k8s-clu-mon-example) for more intricate working example.  
       |||
       ,
       filename=std.thisFile,
@@ -324,7 +324,7 @@ local utils = import 'utils.libsonnet';
         * `secretNames` - array of secret names.
 
         Usefull in defining Vector configuration. 
-        See [k8s-clu-mon-example](github.com/!!!!-PROPER-LINK-NEEDED-!!!!) for working example.  
+        See [k8s-clu-mon-example](https://github.com/pszulc1/k8s-clu-mon-example) for working example.  
       |||,
       args=[
         d.arg('namespaces', d.T.array),
