@@ -1,0 +1,14 @@
+[
+   "clusterRole",
+   "clusterRoleBinding",
+   "networkPolicy",
+   "podDisruptionBudget",
+   "prometheusAgent",
+   "roleBindingConfig",
+   "roleBindingSpecificNamespaces",
+   "roleConfig",
+   "roleSpecificNamespaces",
+   "service",
+   "serviceAccount",
+   "serviceMonitor"
+]

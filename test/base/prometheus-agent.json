@@ -1,0 +1,72 @@
+{
+   "apiVersion": "monitoring.coreos.com/v1alpha1",
+   "kind": "PrometheusAgent",
+   "metadata": {
+      "labels": {
+         "app.kubernetes.io/component": "prometheus",
+         "app.kubernetes.io/instance": "k8s",
+         "app.kubernetes.io/name": "prometheus",
+         "app.kubernetes.io/part-of": "kube-prometheus",
+         "app.kubernetes.io/version": "2.46.0"
+      },
+      "name": "k8s",
+      "namespace": "my-namespace"
+   },
+   "spec": {
+      "externalLabels": {
+         "k8s_clu_mon_cluster": "my-cluster",
+         "k8s_clu_mon_version": "v0.1.0"
+      },
+      "image": "quay.io/prometheus/prometheus:v2.46.0",
+      "nodeSelector": {
+         "kubernetes.io/os": "linux"
+      },
+      "podMetadata": {
+         "labels": {
+            "app.kubernetes.io/component": "prometheus",
+            "app.kubernetes.io/instance": "k8s",
+            "app.kubernetes.io/name": "prometheus-agent",
+            "app.kubernetes.io/part-of": "kube-prometheus"
+         }
+      },
+      "podMonitorNamespaceSelector": {
+         "matchLabels": { }
+      },
+      "podMonitorSelector": {
+         "matchLabels": { }
+      },
+      "podTargetLabels": [
+         "app.kubernetes.io/component",
+         "app.kubernetes.io/name",
+         "app.kubernetes.io/instance",
+         "app.kubernetes.io/part-of",
+         "app.kubernetes.io/version"
+      ],
+      "probeNamespaceSelector": {
+         "matchLabels": { }
+      },
+      "probeSelector": {
+         "matchLabels": { }
+      },
+      "remoteWrite": [ ],
+      "replicas": 1,
+      "resources": {
+         "requests": {
+            "memory": "100Mi"
+         }
+      },
+      "securityContext": {
+         "fsGroup": 2000,
+         "runAsNonRoot": true,
+         "runAsUser": 1000
+      },
+      "serviceAccountName": "prometheus-k8s",
+      "serviceMonitorNamespaceSelector": {
+         "matchLabels": { }
+      },
+      "serviceMonitorSelector": {
+         "matchLabels": { }
+      },
+      "version": "2.46.0"
+   }
+}

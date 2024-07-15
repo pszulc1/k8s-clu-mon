@@ -1,0 +1,31 @@
+{
+   "apiVersion": "monitoring.coreos.com/v1",
+   "kind": "ServiceMonitor",
+   "metadata": {
+      "labels": {
+         "app.kubernetes.io/component": "app-service-monitor",
+         "app.kubernetes.io/name": "default",
+         "app.kubernetes.io/part-of": "k8s-clu-mon",
+         "app.kubernetes.io/version": "v0.1.0"
+      },
+      "name": "default",
+      "namespace": "my-namespace"
+   },
+   "spec": {
+      "endpoints": [
+         {
+            "interval": "30s",
+            "port": "metrics"
+         }
+      ],
+      "jobLabel": "app.kubernetes.io/name",
+      "namespaceSelector": {
+         "matchNames": [ ]
+      },
+      "selector": {
+         "matchLabels": {
+            "metrics_exposed": "true"
+         }
+      }
+   }
+}

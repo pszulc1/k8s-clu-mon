@@ -1,0 +1,12 @@
+{
+   "apiVersion": "v1",
+   "kind": "Namespace",
+   "metadata": {
+      "labels": {
+         "app.kubernetes.io/name": "my-namespace",
+         "app.kubernetes.io/part-of": "k8s-clu-mon",
+         "app.kubernetes.io/version": "v0.1.0"
+      },
+      "name": "my-namespace"
+   }
+}
