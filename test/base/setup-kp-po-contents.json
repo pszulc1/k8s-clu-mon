@@ -1,0 +1,18 @@
+[
+   "0alertmanagerConfigCustomResourceDefinition",
+   "0alertmanagerCustomResourceDefinition",
+   "0podmonitorCustomResourceDefinition",
+   "0probeCustomResourceDefinition",
+   "0prometheusCustomResourceDefinition",
+   "0prometheusagentCustomResourceDefinition",
+   "0prometheusruleCustomResourceDefinition",
+   "0scrapeconfigCustomResourceDefinition",
+   "0servicemonitorCustomResourceDefinition",
+   "0thanosrulerCustomResourceDefinition",
+   "clusterRole",
+   "clusterRoleBinding",
+   "deployment",
+   "networkPolicy",
+   "service",
+   "serviceAccount"
+]

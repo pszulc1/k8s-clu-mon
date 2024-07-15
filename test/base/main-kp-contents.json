@@ -1,0 +1,7 @@
+[
+   "kubeStateMetrics",
+   "kubernetesControlPlane",
+   "nodeExporter",
+   "prometheus",
+   "prometheusOperator"
+]
