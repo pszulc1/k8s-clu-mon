@@ -136,6 +136,11 @@ test.new(std.thisFile)
     (kcm.new(params.namespace, params.cluster)).monitoring['kube-prometheus'].prometheus.prometheusAgent
     ,
     prometheusAgent
+    + {
+      spec+: {
+        externalLabels+: {'k8s_clu_mon_version': global.version}
+      }
+    }
   )
 )
 + test.case.new(
@@ -149,6 +154,7 @@ test.new(std.thisFile)
     prometheusAgent
     {
       spec+: {
+        externalLabels+: {'k8s_clu_mon_version': global.version},
         remoteWrite: [params['kube-prometheus'].remoteWrite[0]],
       },
     }
@@ -165,6 +171,7 @@ test.new(std.thisFile)
     prometheusAgent
     {
       spec+: {
+        externalLabels+: {'k8s_clu_mon_version': global.version},
         remoteWrite: [params['kube-prometheus'].remoteWrite[1]],
       },
     }
@@ -183,6 +190,7 @@ test.new(std.thisFile)
     prometheusAgent
     {
       spec+: {
+        externalLabels+: {'k8s_clu_mon_version': global.version},
         remoteWrite: [
           params['kube-prometheus'].remoteWrite[1],
           params['kube-prometheus'].remoteWrite[0],
