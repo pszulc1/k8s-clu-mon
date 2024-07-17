@@ -64,7 +64,7 @@ Test cases are not comprehensive, they should rather be treated as proof of conc
 
 To close the new release:
 
-- set `(import 'global.json').version` consistently with the new release tag,
+- set `(global.json).version` consistently with the new release tag,
 - `make docs` to update reference to version tag which was set as above.
 
 ## Project status

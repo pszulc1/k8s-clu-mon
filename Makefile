@@ -5,4 +5,4 @@ docs:
 
 .PHONY: test
 test:
-	@jsonnet -J . -J vendor test/main.jsonnet
+	@jsonnet -J . -J vendor test/test-cases.jsonnet

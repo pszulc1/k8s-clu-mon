@@ -1,4 +1,4 @@
-local test = import '../vendor/testonnet/main.libsonnet';
+local test = import 'testonnet/main.libsonnet';
 
 local params = {
 
